@@ -1,1 +1,61 @@
 
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* attendance_auto_checkout
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20191022\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-15 07:00+0000\n"
+"PO-Revision-Date: 2021-02-15 07:00+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: attendance_auto_checkout
+#: model:ir.model,name:attendance_auto_checkout.model_hr_attendance
+msgid "Attendance"
+msgstr "حضور"
+
+#. module: attendance_auto_checkout
+#: model:ir.actions.server,name:attendance_auto_checkout.ir_cron_attendance_auto_checkout_ir_actions_server
+#: model:ir.cron,cron_name:attendance_auto_checkout.ir_cron_attendance_auto_checkout
+#: model:ir.cron,name:attendance_auto_checkout.ir_cron_attendance_auto_checkout
+msgid "Auto Checkout Attendnace"
+msgstr "Auto Checkout Attendnace"
+
+#. module: attendance_auto_checkout
+#: model:ir.model.fields,field_description:attendance_auto_checkout.field_resource_calendar_attendance_auto_out
+msgid "Auto Out"
+msgstr "خروج تلقائي"
+
+#. module: attendance_auto_checkout
+#: model:ir.model.fields,field_description:attendance_auto_checkout.field_hr_attendance_auto_checkout
+msgid "Automatic Checkout"
+msgstr "خروج تلقائي"
+
+#. module: attendance_auto_checkout
+#: model:ir.model.fields,field_description:attendance_auto_checkout.field_resource_calendar_can_auto_out
+msgid "Can Auto Check Out"
+msgstr "يستطيع الخروج التلقائي"
+
+#. module: attendance_auto_checkout
+#: model:ir.model,name:attendance_auto_checkout.model_resource_calendar
+msgid "Resource Calendar"
+msgstr "تقويم المورد"
+
+#. module: attendance_auto_checkout
+#: model:ir.model,name:attendance_auto_checkout.model_resource_calendar_attendance
+msgid "Work Detail"
+msgstr "تفاصيل العمل"
+
+#. module: attendance_auto_checkout
+#: code:addons/attendance_auto_checkout/models/hr_attendance.py:156
+#, python-format
+msgid "Wrong time format, Kindly check Auto Out in the shift line %s"
+msgstr "خطأ في تنسيق الوقت، يرجى مراجعة الخروج التلقائي في %s"
+
