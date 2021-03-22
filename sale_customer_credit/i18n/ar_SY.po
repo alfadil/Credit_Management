@@ -1,4 +1,3 @@
-
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 #	* attendance_auto_checkout
@@ -8,13 +7,17 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0-20191022\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-15 07:00+0000\n"
-"PO-Revision-Date: 2021-02-15 07:00+0000\n"
-"Last-Translator: <>\n"
-"Language-Team: \n"
+"PO-Revision-Date: 2021-03-22 18:01+0000\n"
+"Last-Translator: Weblate Admin <weblate@example.com>\n"
+"Language-Team: Arabic <http://weblate.example.com/projects/credit_management/"
+"httpsgithub-comalfadilcredit_management/ar_SY/>\n"
+"Language: ar_SY\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
-"Plural-Forms: \n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 4.3.2\n"
 
 #. module: attendance_auto_checkout
 #: model:ir.model,name:attendance_auto_checkout.model_hr_attendance
@@ -26,7 +29,7 @@ msgstr "حضور"
 #: model:ir.cron,cron_name:attendance_auto_checkout.ir_cron_attendance_auto_checkout
 #: model:ir.cron,name:attendance_auto_checkout.ir_cron_attendance_auto_checkout
 msgid "Auto Checkout Attendnace"
-msgstr "Auto Checkout Attendnace"
+msgstr "ثص"
 
 #. module: attendance_auto_checkout
 #: model:ir.model.fields,field_description:attendance_auto_checkout.field_resource_calendar_attendance_auto_out
@@ -58,4 +61,3 @@ msgstr "تفاصيل العمل"
 #, python-format
 msgid "Wrong time format, Kindly check Auto Out in the shift line %s"
 msgstr "خطأ في تنسيق الوقت، يرجى مراجعة الخروج التلقائي في %s"
-
