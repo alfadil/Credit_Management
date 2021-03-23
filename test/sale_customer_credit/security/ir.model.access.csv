@@ -1,0 +1,8 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_model_customer_credit_policy_group_invoice","model_customer_credit_policy_group_invoice","model_customer_credit_policy","account.group_account_invoice",1,1,1,1
+"access_model_customer_credit_policy_limit_group_invoice","model_customer_credit_policy_limit_group_invoice","model_customer_credit_policy_limit","account.group_account_invoice",1,1,1,1
+"access_model_customer_credit_policy_limit_history_group_invoice","model_customer_credit_policy_limit_history_group_invoice","model_customer_credit_policy_limit_history","account.group_account_invoice",1,1,1,1
+
+"access_model_customer_credit_policy_salesman","model_customer_credit_policy_salesman","model_customer_credit_policy","sales_team.group_sale_salesman",1,0,0,0
+"access_model_customer_credit_policy_limit_salesman","model_customer_credit_policy_limit_salesman","model_customer_credit_policy_limit","sales_team.group_sale_salesman",1,0,0,0
+"access_model_customer_credit_policy_limit_history_salesman","model_customer_credit_policy_limit_history_salesman","model_customer_credit_policy_limit_history","sales_team.group_sale_salesman",1,1,1,0
