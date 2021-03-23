@@ -7,10 +7,10 @@ msgstr ""
 "Project-Id-Version: Odoo Server 11.0-20191022\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-02-15 07:00+0000\n"
-"PO-Revision-Date: 2021-03-23 06:54+0000\n"
+"PO-Revision-Date: 2021-03-23 07:28+0000\n"
 "Last-Translator: Weblate Admin <weblate@example.com>\n"
 "Language-Team: Arabic <http://weblate.example.com/projects/credit_management/"
-"httpsgithub-comalfadilcredit_management/ar_SY/>\n"
+"sale_customer_credit_copy/ar_SY/>\n"
 "Language: ar_SY\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,7 +22,7 @@ msgstr ""
 #. module: attendance_auto_checkout
 #: model:ir.model,name:attendance_auto_checkout.model_hr_attendance
 msgid "Attendance"
-msgstr "نعم"
+msgstr "يب"
 
 #. module: attendance_auto_checkout
 #: model:ir.actions.server,name:attendance_auto_checkout.ir_cron_attendance_auto_checkout_ir_actions_server
