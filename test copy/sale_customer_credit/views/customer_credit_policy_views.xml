@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<odoo>
+    <!-- customer.credit.policy tree view -->
+    <record id="customer_credit_policy_view_tree" model="ir.ui.view">
+        <field name="name">customer.credit.policy.view.tree</field>
+        <field name="model">customer.credit.policy</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name" />
+            </tree>
+        </field>
+    </record>
+    <!-- customer.credit.policy form view -->
+    <record id="customer_credit_policy_view_form" model="ir.ui.view">
+        <field name="name">customer.credit.policy.view.form</field>
+        <field name="model">customer.credit.policy</field>
+        <field name="arch" type="xml">
+            <form string="Customers Credit Policy">
+                <sheet>
+                    <div class="oe_title">
+                        <label
+                            for="name"
+                            class="oe_edit_only"
+                            string="Credit Policy Name"
+                        />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <label for="limits_ids" string="Limits" />
+                    <field name="limits_ids">
+                        <tree>
+                            <field name="name" />
+                            <field name="limit" />
+                            <field name="notify_responsible" />
+                            <field name="send_mail" />
+                            <field name="block_customer" />
+                        </tree>
+                    </field>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- customer.credit.policy.limit form view -->
+    <record id="customer_credit_policy_limit_view_form" model="ir.ui.view">
+        <field name="name">customer.credit.policy.limit.view.form</field>
+        <field name="model">customer.credit.policy.limit</field>
+        <field name="arch" type="xml">
+            <form string="Credit Policy Limit">
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name" class="oe_edit_only" string="Limit Name" />
+                        <h1>
+                            <field name="name" />
+                        </h1>
+                    </div>
+                    <group colspan="4">
+                        <group>
+                            <field name="limit" />
+                            <field name="effect_after_days" attrs="{'required':True}" />
+                        </group>
+                    </group>
+                    <group string="Actions">
+                        <group>
+                            <field name="notify_responsible" />
+                            <field name="send_mail" />
+                            <field name="block_customer" />
+                        </group>
+                    </group>
+                    <notebook
+                        attrs="{'invisible':[('notify_responsible','!=',True),('send_mail','!=',True)]}"
+                    >
+                        <page
+                            string="Notify Conf."
+                            name="notify_conf"
+                            attrs="{'invisible':[('notify_responsible','!=',True)]}"
+                        >
+                            <group>
+                                <field
+                                    name="responsible_id"
+                                    attrs="{'required':[('notify_responsible','!=',False)]}"
+                                />
+                                <field
+                                    name="activity_type_id"
+                                    attrs="{'required':[('notify_responsible','!=',False)]}"
+                                />
+                                <field name="activity_summary" />
+                            </group>
+                            <field name="activity_note" placeholder="Log a note..." />
+                        </page>
+                        <page
+                            string="Mail Conf."
+                            name="mail_conf"
+                            attrs="{'invisible':[('send_mail','!=',True)]}"
+                        >
+                            <group>
+                                <field
+                                    name="template_id"
+                                    attrs="{'required':[('send_mail','!=',False)]}"
+                                />
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- customer.credit.policy action window -->
+    <record id="customer_credit_policy_action" model="ir.actions.act_window">
+        <field name="name">Customers Credit Policy</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">customer.credit.policy</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">
+                Customer's Credit Policy
+            </p>
+            <p>
+                These Policies allow the company to have control over the increased customers credit
+            </p>
+        </field>
+    </record>
+    <menuitem
+        action="customer_credit_policy_action"
+        id="menu_customer_credit_policy_action"
+        parent="account.account_invoicing_menu"
+        sequence="9"
+    />
+</odoo>
